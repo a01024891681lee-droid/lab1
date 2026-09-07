@@ -3,21 +3,23 @@
 int main()
 {
 
-    int score();
-    char grade();
+    int score{};
+    char grade{};
     std::cout<< "Enter score:";
     std::cin >> score;
     switch(score/10)
     {
 
-        case 10;
-        case 9; grade = 'A'; break;
-        case 8; grade = 'B'; break;
-        case 7; grade = 'C'; break;
-        case 6; grade = 'D'; break;
+        case 10:
+        case 9: grade = 'A'; break;
+        case 8: grade = 'B'; break;
+        case 7: grade = 'C'; break;
+        case 6: grade = 'D'; break;
+        default: grade = 'F';
+
+    }std::cout << score << "," << grade << std::endl;
 
 
-    }
     //int numOfStudents{30};
     // if (numOfStudents == 30) std::cout << "default\n";
     // else std::cout << "changed\n";
